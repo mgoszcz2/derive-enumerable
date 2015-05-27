@@ -14,7 +14,7 @@
 -- > ([minBound..maxBound] :: [Word8]) == allEnums
 
 
-module Data.Generic.Enumerable (
+module Data.Enumerable.Generic (
     -- * Example usage
     -- $usage
 

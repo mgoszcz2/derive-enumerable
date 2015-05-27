@@ -3,7 +3,7 @@
 Generalized equivalent to doing `[minBound..maxBound]` but on complex types.
 
 
-    λ :m +Data.Generic.Enumerable
+    λ :m +Data.Enumerable.Generic
     λ :set -XDeriveGeneric
     λ data Flag = Flag Bool Word8 deriving (Show, Generic)
     λ instance Enumerable Flag

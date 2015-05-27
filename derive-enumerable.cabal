@@ -3,8 +3,8 @@ version:             0.1.0.0
 synopsis:            Generic instances for enumerating complex data types
 description:         
     Generalized equivalent to doing `[minBound..maxBound]` but on complex types.
-
-    > λ :m +Data.Generic.Enumerable
+    .
+    > λ :m +Data.Enumerable.Generic
     > λ :set -XDeriveGeneric
     > λ data Flag = Flag Bool Word8 deriving (Show, Generic)
     > λ instance Enumerable Flag
@@ -16,7 +16,7 @@ license-file:        LICENSE
 author:              Maciej Goszczycki <mgoszcz2@gmail.com>
 maintainer:          Maciej Goszczycki <mgoszcz2@gmail.com>
 copyright:           (c) 2015 Maciej Goszczycki
-category:            Data
+category:            Data, Generics
 build-type:          Simple
 extra-source-files:  README.md
 stability:           experimental
@@ -25,7 +25,7 @@ homepage:            https://github.com/mgoszcz2/derive-enumerable
 bug-reports:         https://github.com/mgoszcz2/derive-enumerable/issues
 
 library
-    exposed-modules:   Data.Generic.Enumerable
+    exposed-modules:   Data.Enumerable.Generic
     other-extensions:  DefaultSignatures,
                        TypeOperators,
                        FlexibleContexts
@@ -33,7 +33,7 @@ library
                        data-default ==0.5.*
     hs-source-dirs:    src
     default-language:  Haskell2010
-    ghc-options:       -Wall -fno-warn-orphans
+    ghc-options:       -Wall -fno-warn-orphans -O2
 
 source-repository head
     type:      git
