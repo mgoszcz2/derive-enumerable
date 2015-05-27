@@ -1,5 +1,5 @@
 name:                derive-enumerable
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            Generic instances for enumerating complex data types
 description:         
     Generalized equivalent to doing `[minBound..maxBound]` but on complex types.
