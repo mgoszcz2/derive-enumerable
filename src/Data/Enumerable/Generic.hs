@@ -31,6 +31,7 @@ module Data.Enumerable.Generic (
       allEnum
     , allConstEnum
     , allDefsEnum
+    , defEnumerable
     -- * Type-classes
     , Enumerable(..)
     , Defaults(..)
