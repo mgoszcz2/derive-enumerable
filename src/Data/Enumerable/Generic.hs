@@ -80,6 +80,7 @@ class Enumerable x where
     per :: x -> (x, Bool)
     default per :: (Generic x, GEnumerable (Rep x)) => x -> (x, Bool)
     per = first to . gper . from
+    {-# MINIMAL per #-}
 
     -- | Symmetric `per`. Only enumerate if the carry boolean is `True`
     sper :: (x, Bool) -> (x, Bool)
